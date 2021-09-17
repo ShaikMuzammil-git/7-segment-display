@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta&display=swap"
+      rel="stylesheet"
+    />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="7seg.css" />
+    <title>Working of a 7 segment Display</title>
+  </head>
+  <body><p class="title" id="title"></p>
+    <nav class="nav-bar">
+      <p class="title1" id="title1"></p>
+      <div class="topnav">
+        <a href="#home" class="active">Menu</a>
+  
+        <div id="myLinks">
+          
+          <a href="#section1"onclick="myFunction()" >Read some theory</a>
+          <a href="#divider1" onclick="myFunction()"> Interactive understanding</a>
+          <a href="#navlink2 " onclick="myFunction()">Click 'n' Create your Alphanumeric and get it's code</a>
+        </div>
+        <a class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section id="section1">
+      <div id="image"></div>
+      <div id="topic-section">
+        <h1 class="topicHead">Select a topic below</h1>
+        <button class="topic" onclick="topic1()"> *   What is a 7 segment display</button>
+        <button class="topic" onclick="topic2()">*  How it works</button>
+        <button class="topic" onclick="topic3()">*  What is 0 and 1 signal</button>
+    </section>
+    <section id="section2">
+      <p id="theory">Some theory here ...</p>   
+    </section>
+   
+      <div id="divider1">
+      <div>Click Number buttons below</div> 
+      <div style="    border: 2px solid black;
+      border-radius: 50%;
+      background-color: darkgray;
+      width: 9vmin;">or</div> 
+    <div>Hover over the table</div></div>
+
+    <section id="section3">
+      <div id="tablecontainer">
+       
+        <table id="table">
+          <thead>
+          <tr>
+            <th>Digit</th>
+           <th id="a">a</th>
+           <th id="b">b</th>
+           <th id="c">c</th>
+           <th id="d">d</th>
+           <th id="e">e</th>
+           <th id="f">f</th>
+           <th id="g">g</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+        <tr id="table0" onmouseover="mouseOver0()" onmouseout="mouseOut0()">
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          
+        </tr>
+        <tr id="table1" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr id="table2" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          
+        </tr>
+        <tr id="table3" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          
+        </tr>
+        <tr id="table4" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+          <td>4</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          
+        </tr>
+        <tr id="table5" onmouseover="mouseOver5()" onmouseout="mouseOut5()">
+          <td>5</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          
+        </tr>
+        <tr id="table6" onmouseover="mouseOver6()" onmouseout="mouseOut6()">
+          <td>6</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+        </tr>
+        <tr id="table7" onmouseover="mouseOver7()" onmouseout="mouseOut7()">
+          <td>7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          
+        </tr>
+        <tr id="table8" onmouseover="mouseOver8()" onmouseout="mouseOut8()">
+          <td>8</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+        </tr>
+        <tr id="table9" onmouseover="mouseOver9()" onmouseout="mouseOut9()">
+          <td>9</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>  
+        </tr>
+        </tbody>
+          </table>
+    </div>
+      <div id="digit">
+        <div id="num">
+       <div id="aBit">a</div>
+        <div id="bBit" >b</div>
+        <div id="cBit" >c</div>
+        <div id="dBit" >d</div>
+        <div id="eBit" >e</div>
+        <div id="fBit" >f</div>
+        <div id="gBit" >g</div>     
+      </div>
+      <div id="selectNum">
+        <button id="N0" onclick="digit0()">0</button>
+        <button id="N1" onclick="digit1()">1</button>
+        <button id="N2"  onclick="digit2()">2</button>
+        <button id="N3"  onclick="digit3()">3</button>
+        <button id="N4"  onclick="digit4()">4</button>
+        <button id="N5"  onclick="digit5()">5</button>
+        <button id="N6"  onclick="digit6()">6</button>
+        <button id="N7"  onclick="digit7()">7</button>
+        <button id="N8"  onclick="digit8()">8</button>
+        <button id="N9"  onclick="digit9()">9</button>
+      </div>
+      </div>
+    </section></div>
+
+
+    <p id="navlink1"></p>
+    <p id="navlink2"></p>
+      <div id="divider2">
+      <div>Click 'n' Create your Alphanumeric</div> 
+      <div style="    border: 2px solid black;
+      border-radius: 50%;
+      background-color: darkgray;
+      width: 9vmin;">&</div> 
+    <div>click on get code </div></div>
+    <section id="section4">
+      <div id="tablecontainer2">
+        <div id="getCode" onmouseover="getCodeHoverOn()" onmouseout="getCodeHoverOff()">get code</div>
+        
+        <div id="yourCode">your code<hr>
+          <div id="zeroOne">
+            <div id="aC">0</div>
+            <div id="bC">0</div>
+            <div id="cC">0</div>
+            <div id="dC">0</div>
+            <div id="eC">0</div>
+            <div id="fC">0</div>
+            <div id="gC">0</div>
+          </div>
+        </div>
+        <div id="reset" onmouseover="resetHoverOn()" onmouseout="resetHoverOff()">reset</div>
+        
+    </div>
+      <div id="digit2">
+        <div id="num">
+       <a id="aBit2" onclick="aBit2()" onmouseover="amouseOverBit2()" onmouseout="amouseOutBit2()">a</a>
+        <a id="bBit2" onclick="bBit2()" onmouseover="bmouseOverBit2()" onmouseout="bmouseOutBit2()">b</a>
+        <a id="cBit2" onclick="cBit2()" onmouseover="cmouseOverBit2()" onmouseout="cmouseOutBit2()">c</a>
+        <a id="dBit2" onclick="dBit2()" onmouseover="dmouseOverBit2()" onmouseout="dmouseOutBit2()">d</a>
+        <div id="eBit2" onclick="eBit2()" onmouseover="emouseOverBit2()" onmouseout="emouseOutBit2()">e</div>
+        <div id="fBit2" onclick="fBit2()" onmouseover="fmouseOverBit2()" onmouseout="fmouseOutBit2()">f</div>
+        <div id="gBit2" onclick="gBit2()" onmouseover="gmouseOverBit2()" onmouseout="gmouseOutBit2()">g</div>     
+      </div>
+      
+      </div>
+      
+    </section></div>
+  </body>
+  <script src="7seg.js"></script>
+</html>
