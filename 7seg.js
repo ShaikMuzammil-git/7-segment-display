@@ -1,29 +1,38 @@
 // making the theory apper onclick to theory topic buttons
 function topic1(){
-    document.getElementById("theory").innerHTML="A seven-segment display is a form of electronic display device for displaying decimal numerals that is an alternative to the more complex dot matrix displays. Seven-segment displays are widely used in digital clocks, electronic meters, basic calculators, and other electronic devices that display numerical information";
+    document.getElementById("theory").style.display="none";
+    document.getElementById("topic1").style.display="block";
+    document.getElementById("topic2").style.display="none";
+    document.getElementById("topic3").style.display="none";
 }
 function topic2(){
-    document.getElementById("theory").innerHTML="The coded signal in the form of 0 and 1 is given to the 7 segment display IC terminals a , b , c , d , e , f , g    individually. If the signal is 0 it indicates “ Low signal” or “Off signal” & If the signal is 1 it indicates “High signal” or “On signal” . Corresponding to the coded signal 0 and 1 each LED segment of the IC can be lit On/Off and Alphanumeric characters can be displayed.";
+    document.getElementById("theory").style.display="none";
+    document.getElementById("topic1").style.display="none";
+    document.getElementById("topic2").style.display="block";
+    document.getElementById("topic3").style.display="none";
 }
 function topic3(){
-    document.getElementById("theory").innerHTML="0 signal indicates “ Low signal” or “Off signal” which keeps the  corresponding segment LEDs not in forward biased i.e Lit Off. Similarly 1 signal indicates “ High signal” or “On signal” which keeps the  corresponding segment LEDs in forward biased i.e Lit On  .To create an Alphanumeric character a set of 7 bit code of 0’s and 1’s  is applied to the 7segment display IC.";
+    document.getElementById("theory").style.display="none";
+    document.getElementById("topic1").style.display="none";
+    document.getElementById("topic2").style.display="none";
+    document.getElementById("topic3").style.display="block";
 }
 
-// hamburger menu bar function
-function myFunction() {
+//  hamburger menu bar function
+ function myFunction() {
     var x = document.getElementById("myLinks");
-    var y = document.querySelector(".topnav");
+     var y = document.querySelector(".topnav");
 
-    if (x.style.display === "block") {
+   if (x.style.display === "block") {
         x.style.display = "none";
-         y.style.height="12vmin";
-         y.style.width="28vmin";
-        } else {
-          x.style.display = "block";
-         y.style.height="48vmin";
-         y.style.width="50vw";
+         y.style.height="4rem";
+         y.style.width="16vw";
+       } else {
+         x.style.display = "block";
+        y.style.height="auto";
+        y.style.width="auto";
      }
-}   
+ }   
 
 
 function mouseOver0() {
@@ -40,12 +49,12 @@ function mouseOver0() {
     document.getElementById("table0").style.fontSize = "larger";    
 } 
 function mouseOut0() {
-    document.getElementById("aBit").style.backgroundColor = "#827d695e";
-    document.getElementById("bBit").style.backgroundColor = "#827d695e";
-    document.getElementById("cBit").style.backgroundColor = "#827d695e";
-    document.getElementById("dBit").style.backgroundColor = "#827d695e";
-    document.getElementById("eBit").style.backgroundColor = "#827d695e";
-    document.getElementById("fBit").style.backgroundColor = "#827d695e";
+    document.getElementById("aBit").style.backgroundColor = "#5551405e";
+    document.getElementById("bBit").style.backgroundColor = "#5551405e";
+    document.getElementById("cBit").style.backgroundColor = "#5551405e";
+    document.getElementById("dBit").style.backgroundColor = "#5551405e";
+    document.getElementById("eBit").style.backgroundColor = "#5551405e";
+    document.getElementById("fBit").style.backgroundColor = "#5551405e";
     document.getElementById("N0").style.backgroundColor = "grey"; 
     document.getElementById("N0").style.color = "black";
     document.getElementById("table0").style.color = "black"; 
@@ -56,12 +65,12 @@ function mouseOut0() {
 function digit0() {
     var x=document.getElementById("table0");
     if(x.style.color===("red")){
-        document.getElementById("aBit").style.backgroundColor = "#827d695e";
-        document.getElementById("bBit").style.backgroundColor = "#827d695e";
-        document.getElementById("cBit").style.backgroundColor = "#827d695e";
-        document.getElementById("dBit").style.backgroundColor = "#827d695e";
-        document.getElementById("eBit").style.backgroundColor = "#827d695e";
-        document.getElementById("fBit").style.backgroundColor = "#827d695e";
+        document.getElementById("aBit").style.backgroundColor = "#5551405e";
+        document.getElementById("bBit").style.backgroundColor = "#5551405e";
+        document.getElementById("cBit").style.backgroundColor = "#5551405e";
+        document.getElementById("dBit").style.backgroundColor = "#5551405e";
+        document.getElementById("eBit").style.backgroundColor = "#5551405e";
+        document.getElementById("fBit").style.backgroundColor = "#5551405e";
         document.getElementById("N0").style.backgroundColor = "grey"; 
         document.getElementById("N0").style.color = "black";
         document.getElementById("table0").style.color = "black"; 
@@ -95,8 +104,8 @@ function mouseOver1() {
 } 
 function mouseOut1() {
     
-    document.getElementById("bBit").style.backgroundColor = "#827d695e";
-    document.getElementById("cBit").style.backgroundColor = "#827d695e";
+    document.getElementById("bBit").style.backgroundColor = "#5551405e";
+    document.getElementById("cBit").style.backgroundColor = "#5551405e";
     
     document.getElementById("N1").style.backgroundColor = "grey"; 
     document.getElementById("N1").style.color = "black";
@@ -109,13 +118,13 @@ function digit1() {
     var y=document.getElementById("table1");
     if(y.style.color===("red")){
         
-        document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-        document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("eBit").style.backgroundColor = "#827d695e";
-        document.getElementById("fBit").style.backgroundColor = "#827d695e";
-        document.getElementById("gBit").style.backgroundColor = "#827d695e";
+        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("eBit").style.backgroundColor = "#5551405e";
+        document.getElementById("fBit").style.backgroundColor = "#5551405e";
+        document.getElementById("gBit").style.backgroundColor = "#5551405e";
 
         document.getElementById("N1").style.backgroundColor = "grey"; 
         document.getElementById("N1").style.color = "black";
@@ -153,11 +162,11 @@ function mouseOver2() {
 } 
 function mouseOut2() {
     
-    document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-    document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-    document.getElementById("dBit").style.backgroundColor = "#827d695e"; 
-    document.getElementById("eBit").style.backgroundColor = "#827d695e";    
-    document.getElementById("gBit").style.backgroundColor = "#827d695e"; 
+    document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+    document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+    document.getElementById("dBit").style.backgroundColor = "#5551405e"; 
+    document.getElementById("eBit").style.backgroundColor = "#5551405e";    
+    document.getElementById("gBit").style.backgroundColor = "#5551405e"; 
     
     document.getElementById("N2").style.backgroundColor = "grey"; 
     document.getElementById("N2").style.color = "black";
@@ -168,13 +177,13 @@ function mouseOut2() {
 function digit2() {
     var z=document.getElementById("table2");
     if(z.style.color===("red")){      
-        document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-        document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("eBit").style.backgroundColor = "#827d695e";
-        document.getElementById("fBit").style.backgroundColor = "#827d695e";
-        document.getElementById("gBit").style.backgroundColor = "#827d695e";
+        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("eBit").style.backgroundColor = "#5551405e";
+        document.getElementById("fBit").style.backgroundColor = "#5551405e";
+        document.getElementById("gBit").style.backgroundColor = "#5551405e";
 
         document.getElementById("N2").style.backgroundColor = "grey"; 
         document.getElementById("N2").style.color = "black";
@@ -215,11 +224,11 @@ function digit2() {
         document.getElementById("table3").style.fontSize = "larger";    
     } 
     function mouseOut3() {
-        document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-        document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("gBit").style.backgroundColor = "#827d695e";  
+        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("gBit").style.backgroundColor = "#5551405e";  
         
         document.getElementById("N3").style.backgroundColor = "grey"; 
         document.getElementById("N3").style.color = "black";
@@ -231,13 +240,13 @@ function digit2() {
     function digit3() {
         var m=document.getElementById("table3");
         if(m.style.color===("red")){      
-        document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-        document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-        document.getElementById("eBit").style.backgroundColor = "#827d695e";
-        document.getElementById("fBit").style.backgroundColor = "#827d695e";
-        document.getElementById("gBit").style.backgroundColor = "#827d695e";
+        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+        document.getElementById("eBit").style.backgroundColor = "#5551405e";
+        document.getElementById("fBit").style.backgroundColor = "#5551405e";
+        document.getElementById("gBit").style.backgroundColor = "#5551405e";
 
             document.getElementById("N3").style.backgroundColor = "grey"; 
             document.getElementById("N3").style.color = "black";
@@ -278,10 +287,10 @@ function digit2() {
             document.getElementById("table4").style.fontSize = "larger";    
         } 
         function mouseOut4() {   
-            document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-            document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-            document.getElementById("gBit").style.backgroundColor = "#827d695e";  
-            document.getElementById("fBit").style.backgroundColor = "#827d695e"; 
+            document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+            document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+            document.getElementById("gBit").style.backgroundColor = "#5551405e";  
+            document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
 
             document.getElementById("N4").style.backgroundColor = "grey"; 
             document.getElementById("N4").style.color = "black";
@@ -293,13 +302,13 @@ function digit2() {
         function digit4() {
             var m=document.getElementById("table4");
             if(m.style.color===("red")){      
-            document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-            document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-            document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-            document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-            document.getElementById("eBit").style.backgroundColor = "#827d695e";
-            document.getElementById("fBit").style.backgroundColor = "#827d695e";
-            document.getElementById("gBit").style.backgroundColor = "#827d695e";
+            document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+            document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+            document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+            document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+            document.getElementById("eBit").style.backgroundColor = "#5551405e";
+            document.getElementById("fBit").style.backgroundColor = "#5551405e";
+            document.getElementById("gBit").style.backgroundColor = "#5551405e";
     
                 document.getElementById("N4").style.backgroundColor = "grey"; 
                 document.getElementById("N4").style.color = "black";
@@ -340,11 +349,11 @@ function digit2() {
                 document.getElementById("table5").style.fontSize = "larger";    
             } 
             function mouseOut5() {     
-                document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-                document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-                document.getElementById("fBit").style.backgroundColor = "#827d695e"; 
-                document.getElementById("gBit").style.backgroundColor = "#827d695e";    
+                document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+                document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+                document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
+                document.getElementById("gBit").style.backgroundColor = "#5551405e";    
     
                 document.getElementById("N5").style.backgroundColor = "grey"; 
                 document.getElementById("N5").style.color = "black";
@@ -356,13 +365,13 @@ function digit2() {
             function digit5() {
                 var m=document.getElementById("table5");
                 if(m.style.color===("red")){      
-                document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-                document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-                document.getElementById("eBit").style.backgroundColor = "#827d695e";
-                document.getElementById("fBit").style.backgroundColor = "#827d695e";
-                document.getElementById("gBit").style.backgroundColor = "#827d695e";
+                document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+                document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+                document.getElementById("eBit").style.backgroundColor = "#5551405e";
+                document.getElementById("fBit").style.backgroundColor = "#5551405e";
+                document.getElementById("gBit").style.backgroundColor = "#5551405e";
         
                     document.getElementById("N5").style.backgroundColor = "grey"; 
                     document.getElementById("N5").style.color = "black";
@@ -404,13 +413,13 @@ function digit2() {
                     document.getElementById("table6").style.fontSize = "larger";    
                 } 
                 function mouseOut6() {     
-                    document.getElementById("aBit").style.backgroundColor = "#827d695e";
-                    document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                    document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                    document.getElementById("dBit").style.backgroundColor = "#827d695e";  
-                    document.getElementById("eBit").style.backgroundColor = "#827d695e";  
-                    document.getElementById("fBit").style.backgroundColor = "#827d695e"; 
-                    document.getElementById("gBit").style.backgroundColor = "#827d695e";    
+                    document.getElementById("aBit").style.backgroundColor = "#5551405e";
+                    document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                    document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                    document.getElementById("dBit").style.backgroundColor = "#5551405e";  
+                    document.getElementById("eBit").style.backgroundColor = "#5551405e";  
+                    document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
+                    document.getElementById("gBit").style.backgroundColor = "#5551405e";    
         
                     document.getElementById("N6").style.backgroundColor = "grey"; 
                     document.getElementById("N6").style.color = "black";
@@ -422,13 +431,13 @@ function digit2() {
                 function digit6() {
                     var m=document.getElementById("table6");
                     if(m.style.color===("red")){      
-                    document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-                    document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                    document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                    document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-                    document.getElementById("eBit").style.backgroundColor = "#827d695e";
-                    document.getElementById("fBit").style.backgroundColor = "#827d695e";
-                    document.getElementById("gBit").style.backgroundColor = "#827d695e";
+                    document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+                    document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                    document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                    document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+                    document.getElementById("eBit").style.backgroundColor = "#5551405e";
+                    document.getElementById("fBit").style.backgroundColor = "#5551405e";
+                    document.getElementById("gBit").style.backgroundColor = "#5551405e";
             
                         document.getElementById("N6").style.backgroundColor = "grey"; 
                         document.getElementById("N6").style.color = "black";
@@ -471,13 +480,13 @@ function digit2() {
                         document.getElementById("table7").style.fontSize = "larger";    
                     } 
                     function mouseOut7() {     
-                        document.getElementById("aBit").style.backgroundColor = "#827d695e";
-                        document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                        document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                        document.getElementById("dBit").style.backgroundColor = "#827d695e";  
-                        document.getElementById("eBit").style.backgroundColor = "#827d695e";  
-                        document.getElementById("fBit").style.backgroundColor = "#827d695e"; 
-                        document.getElementById("gBit").style.backgroundColor = "#827d695e";    
+                        document.getElementById("aBit").style.backgroundColor = "#5551405e";
+                        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                        document.getElementById("dBit").style.backgroundColor = "#5551405e";  
+                        document.getElementById("eBit").style.backgroundColor = "#5551405e";  
+                        document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
+                        document.getElementById("gBit").style.backgroundColor = "#5551405e";    
             
                         document.getElementById("N7").style.backgroundColor = "grey"; 
                         document.getElementById("N7").style.color = "black";
@@ -489,13 +498,13 @@ function digit2() {
                     function digit7() {
                         var m=document.getElementById("table7");
                         if(m.style.color===("red")){      
-                        document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-                        document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                        document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                        document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-                        document.getElementById("eBit").style.backgroundColor = "#827d695e";
-                        document.getElementById("fBit").style.backgroundColor = "#827d695e";
-                        document.getElementById("gBit").style.backgroundColor = "#827d695e";
+                        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+                        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+                        document.getElementById("eBit").style.backgroundColor = "#5551405e";
+                        document.getElementById("fBit").style.backgroundColor = "#5551405e";
+                        document.getElementById("gBit").style.backgroundColor = "#5551405e";
                 
                             document.getElementById("N7").style.backgroundColor = "grey"; 
                             document.getElementById("N7").style.color = "black";
@@ -539,13 +548,13 @@ function digit2() {
                             document.getElementById("table8").style.fontSize = "larger";    
                         } 
                         function mouseOut8() {     
-                            document.getElementById("aBit").style.backgroundColor = "#827d695e";
-                            document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                            document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                            document.getElementById("dBit").style.backgroundColor = "#827d695e";  
-                            document.getElementById("eBit").style.backgroundColor = "#827d695e";  
-                            document.getElementById("fBit").style.backgroundColor = "#827d695e"; 
-                            document.getElementById("gBit").style.backgroundColor = "#827d695e";    
+                            document.getElementById("aBit").style.backgroundColor = "#5551405e";
+                            document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                            document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                            document.getElementById("dBit").style.backgroundColor = "#5551405e";  
+                            document.getElementById("eBit").style.backgroundColor = "#5551405e";  
+                            document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
+                            document.getElementById("gBit").style.backgroundColor = "#5551405e";    
                 
                             document.getElementById("N8").style.backgroundColor = "grey"; 
                             document.getElementById("N8").style.color = "black";
@@ -557,13 +566,13 @@ function digit2() {
                         function digit8() {
                             var m=document.getElementById("table8");
                             if(m.style.color===("red")){      
-                            document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-                            document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                            document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                            document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-                            document.getElementById("eBit").style.backgroundColor = "#827d695e";
-                            document.getElementById("fBit").style.backgroundColor = "#827d695e";
-                            document.getElementById("gBit").style.backgroundColor = "#827d695e";
+                            document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+                            document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                            document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                            document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+                            document.getElementById("eBit").style.backgroundColor = "#5551405e";
+                            document.getElementById("fBit").style.backgroundColor = "#5551405e";
+                            document.getElementById("gBit").style.backgroundColor = "#5551405e";
                     
                                 document.getElementById("N8").style.backgroundColor = "grey"; 
                                 document.getElementById("N8").style.color = "black";
@@ -611,13 +620,13 @@ function digit2() {
                                 document.getElementById("table9").style.fontSize = "larger";    
                             } 
                             function mouseOut9() {     
-                                document.getElementById("aBit").style.backgroundColor = "#827d695e";
-                                document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                                document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                                document.getElementById("dBit").style.backgroundColor = "#827d695e";  
-                                document.getElementById("eBit").style.backgroundColor = "#827d695e";  
-                                document.getElementById("fBit").style.backgroundColor = "#827d695e"; 
-                                document.getElementById("gBit").style.backgroundColor = "#827d695e";    
+                                document.getElementById("aBit").style.backgroundColor = "#5551405e";
+                                document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                                document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                                document.getElementById("dBit").style.backgroundColor = "#5551405e";  
+                                document.getElementById("eBit").style.backgroundColor = "#5551405e";  
+                                document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
+                                document.getElementById("gBit").style.backgroundColor = "#5551405e";    
                     
                                 document.getElementById("N9").style.backgroundColor = "grey"; 
                                 document.getElementById("N9").style.color = "black";
@@ -629,13 +638,13 @@ function digit2() {
                             function digit9() {
                                 var m=document.getElementById("table9");
                                 if(m.style.color===("red")){      
-                                document.getElementById("aBit").style.backgroundColor = "#827d695e";    
-                                document.getElementById("bBit").style.backgroundColor = "#827d695e";    
-                                document.getElementById("cBit").style.backgroundColor = "#827d695e"; 
-                                document.getElementById("dBit").style.backgroundColor = "#827d695e";    
-                                document.getElementById("eBit").style.backgroundColor = "#827d695e";
-                                document.getElementById("fBit").style.backgroundColor = "#827d695e";
-                                document.getElementById("gBit").style.backgroundColor = "#827d695e";
+                                document.getElementById("aBit").style.backgroundColor = "#5551405e";    
+                                document.getElementById("bBit").style.backgroundColor = "#5551405e";    
+                                document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
+                                document.getElementById("dBit").style.backgroundColor = "#5551405e";    
+                                document.getElementById("eBit").style.backgroundColor = "#5551405e";
+                                document.getElementById("fBit").style.backgroundColor = "#5551405e";
+                                document.getElementById("gBit").style.backgroundColor = "#5551405e";
                         
                                     document.getElementById("N9").style.backgroundColor = "grey"; 
                                     document.getElementById("N9").style.color = "black";
@@ -677,11 +686,11 @@ function amouseOverBit2(){
 function amouseOutBit2(){
     var m=document.getElementById("aBit2");
      if(m.style.backgroundColor===("yellow")){
-        document.getElementById("aBit2").style.backgroundColor = "#827d695e";
+        document.getElementById("aBit2").style.backgroundColor = "#5551405e";
      }
      
-     else if(m.style.backgroundColor===("#827d695e")){
-        document.getElementById("aBit2").style.backgroundColor = "#827d695e";
+     else if(m.style.backgroundColor===("#5551405e")){
+        document.getElementById("aBit2").style.backgroundColor = "#5551405e";
      }
      else{
     document.getElementById("aBit2").style.backgroundColor = "red";
@@ -717,11 +726,11 @@ function bmouseOverBit2(){
 function bmouseOutBit2(){
     var m=document.getElementById("bBit2");
      if(m.style.backgroundColor===("yellow")){
-        document.getElementById("bBit2").style.backgroundColor = "#827d695e";
+        document.getElementById("bBit2").style.backgroundColor = "#5551405e";
      }
      
-     else if(m.style.backgroundColor===("#827d695e")){
-        document.getElementById("bBit2").style.backgroundColor = "#827d695e";
+     else if(m.style.backgroundColor===("#5551405e")){
+        document.getElementById("bBit2").style.backgroundColor = "#5551405e";
      }
      else{
     document.getElementById("bBit2").style.backgroundColor = "red";
@@ -756,11 +765,11 @@ function cmouseOverBit2(){
 function cmouseOutBit2(){
     var m=document.getElementById("cBit2");
      if(m.style.backgroundColor===("yellow")){
-        document.getElementById("cBit2").style.backgroundColor = "#827d695e";
+        document.getElementById("cBit2").style.backgroundColor = "#5551405e";
      }
      
-     else if(m.style.backgroundColor===("#827d695e")){
-        document.getElementById("cBit2").style.backgroundColor = "#827d695e";
+     else if(m.style.backgroundColor===("#5551405e")){
+        document.getElementById("cBit2").style.backgroundColor = "#5551405e";
      }
      else{
     document.getElementById("cBit2").style.backgroundColor = "red";
@@ -796,11 +805,11 @@ function dmouseOverBit2(){
 function dmouseOutBit2(){
     var m=document.getElementById("dBit2");
      if(m.style.backgroundColor===("yellow")){
-        document.getElementById("dBit2").style.backgroundColor = "#827d695e";
+        document.getElementById("dBit2").style.backgroundColor = "#5551405e";
      }
      
-     else if(m.style.backgroundColor===("#827d695e")){
-        document.getElementById("dBit2").style.backgroundColor = "#827d695e";
+     else if(m.style.backgroundColor===("#5551405e")){
+        document.getElementById("dBit2").style.backgroundColor = "#5551405e";
      }
      else{
     document.getElementById("dBit2").style.backgroundColor = "red";
@@ -834,11 +843,11 @@ function emouseOverBit2(){
 function emouseOutBit2(){
     var m=document.getElementById("eBit2");
      if(m.style.backgroundColor===("yellow")){
-        document.getElementById("eBit2").style.backgroundColor = "#827d695e";
+        document.getElementById("eBit2").style.backgroundColor = "#5551405e";
      }
      
-     else if(m.style.backgroundColor===("#827d695e")){
-        document.getElementById("eBit2").style.backgroundColor = "#827d695e";
+     else if(m.style.backgroundColor===("#5551405e")){
+        document.getElementById("eBit2").style.backgroundColor = "#5551405e";
      }
      else{
     document.getElementById("eBit2").style.backgroundColor = "red";
@@ -871,11 +880,11 @@ function fmouseOverBit2(){
 function fmouseOutBit2(){
     var m=document.getElementById("fBit2");
      if(m.style.backgroundColor===("yellow")){
-        document.getElementById("fBit2").style.backgroundColor = "#827d695e";
+        document.getElementById("fBit2").style.backgroundColor = "#5551405e";
      }
      
-     else if(m.style.backgroundColor===("#827d695e")){
-        document.getElementById("fBit2").style.backgroundColor = "#827d695e";
+     else if(m.style.backgroundColor===("#5551405e")){
+        document.getElementById("fBit2").style.backgroundColor = "#5551405e";
      }
      else{
     document.getElementById("fBit2").style.backgroundColor = "red";
@@ -909,11 +918,11 @@ function gmouseOverBit2(){
 function gmouseOutBit2(){
     var m=document.getElementById("gBit2");
      if(m.style.backgroundColor===("yellow")){
-        document.getElementById("gBit2").style.backgroundColor = "#827d695e";
+        document.getElementById("gBit2").style.backgroundColor = "#5551405e";
      }
      
-     else if(m.style.backgroundColor===("#827d695e")){
-        document.getElementById("gBit2").style.backgroundColor = "#827d695e";
+     else if(m.style.backgroundColor===("#5551405e")){
+        document.getElementById("gBit2").style.backgroundColor = "#5551405e";
      }
      else{
     document.getElementById("gBit2").style.backgroundColor = "red";
@@ -1019,13 +1028,13 @@ function reset(){
 
     document.getElementById("zeroOne").style.opacity = "0"; 
 
-    document.getElementById("aBit2").style.backgroundColor = "#827d695e";
-    document.getElementById("bBit2").style.backgroundColor = "#827d695e";
-    document.getElementById("cBit2").style.backgroundColor = "#827d695e";
-    document.getElementById("dBit2").style.backgroundColor = "#827d695e";
-    document.getElementById("eBit2").style.backgroundColor = "#827d695e";
-    document.getElementById("fBit2").style.backgroundColor = "#827d695e";
-    document.getElementById("gBit2").style.backgroundColor = "#827d695e";
+    document.getElementById("aBit2").style.backgroundColor = "#5551405e";
+    document.getElementById("bBit2").style.backgroundColor = "#5551405e";
+    document.getElementById("cBit2").style.backgroundColor = "#5551405e";
+    document.getElementById("dBit2").style.backgroundColor = "#5551405e";
+    document.getElementById("eBit2").style.backgroundColor = "#5551405e";
+    document.getElementById("fBit2").style.backgroundColor = "#5551405e";
+    document.getElementById("gBit2").style.backgroundColor = "#5551405e";
 
 
 
