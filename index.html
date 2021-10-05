@@ -18,7 +18,8 @@
   <body><p class="title" id="title"></p>
     <nav class="nav-bar">
       <p class="title1" id="title1"></p>
-      <div class="topnav">
+      
+<div class="topnav">
         <a href="#home" class="active">Menu</a>
   
         <div id="myLinks">
@@ -32,7 +33,6 @@
         </a>
       </div>
     </nav>
-
     <section id="section1">
       <div id="image"></div>
       <div id="topic-section">
@@ -40,9 +40,14 @@
         <button class="topic" onclick="topic1()"> *   What is a 7 segment display</button>
         <button class="topic" onclick="topic2()">*  How it works</button>
         <button class="topic" onclick="topic3()">*  What is 0 and 1 signal</button>
-    </section>
+      </div>
+      </section>
     <section id="section2">
-      <p id="theory">Some theory here ...</p>   
+      <p id="theory">Some theory here ...</p>  
+      <p id="topic1">A seven-segment display is a form of electronic display device for displaying decimal numerals that is an alternative to the more complex dot matrix displays. <br> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seven-segment displays are widely used in digital clocks, electronic meters, basic calculators, and other electronic devices that display numerical information.</p>   
+      <p id="topic2">The coded signal in the form of 0 and 1 is given to the 7 segment display IC terminals a , b , c , d , e , f , g    individually. <br> <br>&nbsp; &nbsp; If the signal is 0 it indicates “ Low signal” or “Off signal” & If the signal is 1 it indicates “High signal” or “On signal” . <br> <br>&nbsp; &nbsp; Corresponding to the coded signal 0 and 1 each LED segment of the IC can be lit On/Off and Alphanumeric characters can be displayed.</p>   
+      <p id="topic3">0 signal indicates “ Low signal” or “Off signal” which keeps the  corresponding segment LEDs not in forward biased i.e Lit Off. <br> <br>&nbsp; &nbsp; Similarly 1 signal indicates “ High signal” or “On signal” which keeps the  corresponding segment LED in forward biased i.e Lit On  . <br> <br>&nbsp; &nbsp; To create an Alphanumeric character a set of 7 bit code of 0’s and 1’s  is applied to the 7segment display IC.</p>   
+ 
     </section>
    
       <div id="divider1">
@@ -247,8 +252,22 @@
       </div>
       
       </div>
-      
-    </section></div>
+       <!-- <div id="num3">
+ <a id="aBit3" onclick="aBit2()" onmouseover="amouseOverBit2()" onmouseout="amouseOutBit2()">a</a>
+  <a id="bBit3" onclick="bBit2()" onmouseover="bmouseOverBit2()" onmouseout="bmouseOutBit2()">b</a>
+  <a id="cBit3" onclick="cBit2()" onmouseover="cmouseOverBit2()" onmouseout="cmouseOutBit2()">c</a>
+  <a id="dBit3" onclick="dBit2()" onmouseover="dmouseOverBit2()" onmouseout="dmouseOutBit2()">d</a>
+  <div id="eBit3" onclick="eBit2()" onmouseover="emouseOverBit2()" onmouseout="emouseOutBit2()">e</div>
+  <div id="fBit3" onclick="fBit2()" onmouseover="fmouseOverBit2()" onmouseout="fmouseOutBit2()">f</div>
+  <div id="gBit3" onclick="gBit2()" onmouseover="gmouseOverBit2()" onmouseout="gmouseOutBit2()">g</div>     
+
+
+</div> -->
+    </section>
+  </div>
   </body>
   <script src="7seg.js"></script>
 </html>
+
+
+ 
