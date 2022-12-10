@@ -372,7 +372,7 @@ const gC = document.getElementById("getCode");
 gC.addEventListener('click', getCode );
 
 const rst = document.getElementById("reset");
-rst.addEventListener('click', dsfsdfsdfsdf );
+rst.addEventListener('click', reset );
 
 
 function getCode() {
@@ -389,7 +389,7 @@ function getCode() {
 }
 
 
-function dsfsdfsdfsdf() {
+function reset() {
   array.forEach((element) => {
     element.style.backgroundColor = "#5551405e";
   })
