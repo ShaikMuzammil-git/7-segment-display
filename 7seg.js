@@ -191,7 +191,7 @@ mouseOver1 = () => {
   document.getElementById("table1").style.backgroundColor = "black";
   document.getElementById("table1").style.fontSize = "larger";
 };
-function mouseOver2() {
+mouseOver2 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("dBit").style.backgroundColor = "red";
@@ -203,7 +203,7 @@ function mouseOver2() {
   document.getElementById("table2").style.backgroundColor = "black";
   document.getElementById("table2").style.fontSize = "larger";
 }
-function mouseOver3() {
+mouseOver3 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -217,7 +217,7 @@ function mouseOver3() {
   document.getElementById("table3").style.backgroundColor = "black";
   document.getElementById("table3").style.fontSize = "larger";
 }
-function mouseOver4() {
+mouseOver4 = () => {
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
   document.getElementById("gBit").style.backgroundColor = "red";
@@ -230,7 +230,7 @@ function mouseOver4() {
   document.getElementById("table4").style.backgroundColor = "black";
   document.getElementById("table4").style.fontSize = "larger";
 }
-function mouseOver5() {
+mouseOver5 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
   document.getElementById("dBit").style.backgroundColor = "red";
@@ -244,7 +244,7 @@ function mouseOver5() {
   document.getElementById("table5").style.backgroundColor = "black";
   document.getElementById("table5").style.fontSize = "larger";
 }
-function mouseOver6() {
+mouseOver6 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
   document.getElementById("dBit").style.backgroundColor = "red";
@@ -259,7 +259,7 @@ function mouseOver6() {
   document.getElementById("table6").style.backgroundColor = "black";
   document.getElementById("table6").style.fontSize = "larger";
 }
-function mouseOver7() {
+mouseOver7 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -271,7 +271,7 @@ function mouseOver7() {
   document.getElementById("table7").style.backgroundColor = "black";
   document.getElementById("table7").style.fontSize = "larger";
 }
-function mouseOver8() {
+mouseOver8 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -287,7 +287,7 @@ function mouseOver8() {
   document.getElementById("table8").style.backgroundColor = "black";
   document.getElementById("table8").style.fontSize = "larger";
 }
-function mouseOver9() {
+mouseOver9 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -371,11 +371,12 @@ gBit2 = () => bitsOnClick(6) ;
 const gC = document.getElementById("getCode");
 gC.addEventListener('click', getCode );
 
+
 const rst = document.getElementById("reset");
-rst.addEventListener('click', reset );
+rst.addEventListener('click', resetting );
 
 
-function getCode() {
+function getCode(){
   array.forEach( (element,i) => {
     let status = document.getElementById(i) ;
     if (element.style.backgroundColor === "red") {
@@ -388,11 +389,14 @@ function getCode() {
   document.getElementById("zeroOne").style.opacity = "1";
 }
 
-
-function reset() {
+function resetting(){
   array.forEach((element) => {
     element.style.backgroundColor = "#5551405e";
   })
   document.getElementById("zeroOne").style.opacity = "0";
 }
+
+
+
+
 
