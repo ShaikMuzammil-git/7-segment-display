@@ -1,1053 +1,871 @@
-// making the theory apper onclick to theory topic buttons
-function topic1(){
-    document.getElementById("theory").style.display="none";
-    document.getElementById("topic1").style.display="block";
-    document.getElementById("topic2").style.display="none";
-    document.getElementById("topic3").style.display="none";
+html {
+  scroll-behavior: smooth;
 }
-function topic2(){
-    document.getElementById("theory").style.display="none";
-    document.getElementById("topic1").style.display="none";
-    document.getElementById("topic2").style.display="block";
-    document.getElementById("topic3").style.display="none";
-}
-function topic3(){
-    document.getElementById("theory").style.display="none";
-    document.getElementById("topic1").style.display="none";
-    document.getElementById("topic2").style.display="none";
-    document.getElementById("topic3").style.display="block";
+body {
+  background-color: rgba(128, 128, 128, 0.411);
 }
 
-//  hamburger menu bar function
- function myFunction() {
-    var x = document.getElementById("myLinks");
-     var y = document.querySelector(".topnav");
-
-   if (x.style.display === "block") {
-        x.style.display = "none";
-         y.style.height="4rem";
-         y.style.width="16vw";
-       } else {
-         x.style.display = "block";
-        y.style.height="auto";
-        y.style.width="auto";
-     }
- }   
-
-
-function mouseOver0() {
-    document.getElementById("aBit").style.backgroundColor = "red";  
-    document.getElementById("bBit").style.backgroundColor = "red";    
-    document.getElementById("cBit").style.backgroundColor = "red";    
-    document.getElementById("dBit").style.backgroundColor = "red";    
-    document.getElementById("eBit").style.backgroundColor = "red";    
-    document.getElementById("fBit").style.backgroundColor = "red";    
-    document.getElementById("N0").style.backgroundColor = "black"; 
-    document.getElementById("N0").style.color = "yellow";    
-    document.getElementById("table0").style.color = "red"; 
-    document.getElementById("table0").style.backgroundColor = "black";
-    document.getElementById("table0").style.fontSize = "larger";    
-} 
-function mouseOut0() {
-    document.getElementById("aBit").style.backgroundColor = "#5551405e";
-    document.getElementById("bBit").style.backgroundColor = "#5551405e";
-    document.getElementById("cBit").style.backgroundColor = "#5551405e";
-    document.getElementById("dBit").style.backgroundColor = "#5551405e";
-    document.getElementById("eBit").style.backgroundColor = "#5551405e";
-    document.getElementById("fBit").style.backgroundColor = "#5551405e";
-    document.getElementById("N0").style.backgroundColor = "grey"; 
-    document.getElementById("N0").style.color = "black";
-    document.getElementById("table0").style.color = "black"; 
-    document.getElementById("table0").style.backgroundColor = "grey";
-    document.getElementById("table0").style.fontSize = "inherit";
+.nav-bar {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  margin-top: -15vmin;
+  color: rgb(11, 68, 49);
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title {
+  height: 12vmin;
+  width: 61vw;
+  margin-left: 2vmin;
+  background-image: url("white.png");
+  margin-top: 0vmin;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
-function digit0() {
-    var x=document.getElementById("table0");
-    if(x.style.color===("red")){
-        document.getElementById("aBit").style.backgroundColor = "#5551405e";
-        document.getElementById("bBit").style.backgroundColor = "#5551405e";
-        document.getElementById("cBit").style.backgroundColor = "#5551405e";
-        document.getElementById("dBit").style.backgroundColor = "#5551405e";
-        document.getElementById("eBit").style.backgroundColor = "#5551405e";
-        document.getElementById("fBit").style.backgroundColor = "#5551405e";
-        document.getElementById("N0").style.backgroundColor = "grey"; 
-        document.getElementById("N0").style.color = "black";
-        document.getElementById("table0").style.color = "black"; 
-        document.getElementById("table0").style.backgroundColor = "grey";
-        document.getElementById("table0").style.fontSize = "inherit";
-        }   
-        else{  
-            document.getElementById("aBit").style.backgroundColor = "red";  
-            document.getElementById("bBit").style.backgroundColor = "red";    
-            document.getElementById("cBit").style.backgroundColor = "red";    
-            document.getElementById("dBit").style.backgroundColor = "red";    
-            document.getElementById("eBit").style.backgroundColor = "red";    
-            document.getElementById("fBit").style.backgroundColor = "red";    
-            document.getElementById("N0").style.backgroundColor = "black"; 
-            document.getElementById("N0").style.color = "yellow";    
-            document.getElementById("table0").style.color = "red"; 
-            document.getElementById("table0").style.backgroundColor = "black";
-            document.getElementById("table0").style.fontSize = "larger";
-      } 
-    }
+.try-it {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  font-size: 3vmax;
+  margin-top: auto;
+  margin-left: 48vw;
+}
+@media only screen and (max-width: 750px) {
+  #title {
+    font-size: 2.5vmax;
+    color: red;
+  }
+  #try-it {
+    font-size: 2.5vmax;
+    color: red;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #title {
+    font-size: 2vmax;
+    color: red;
+  }
+  #try-it {
+    font-size: 2vmax;
+    color: red;
+  }
+}
+#section1 {
+  height: 50vmin;
+  width: 92vw;
+  display: block;
+  margin: auto;
+  display: flex;
+  border: 3px solid black;
+  margin-top: 1vmin;
+  border-radius: 10px 10px 0px 0px;
+  border-style: solid solid none solid;
+}
+#image {
+  height: inherit;
+  width: 50%;
+  background-image: url("crkt.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#topic-section {
+  height: inherit;
+  width: 50%;
+  background-color: rgb(187 193 56 / 98%);
+  color: rgb(6 6 6);
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 
-function mouseOver1() {
-    document.getElementById("bBit").style.backgroundColor = "red";    
-    document.getElementById("cBit").style.backgroundColor = "red";    
-       
-    document.getElementById("N1").style.backgroundColor = "black"; 
-    document.getElementById("N1").style.color = "yellow";    
-    document.getElementById("table1").style.color = "red"; 
-    document.getElementById("table1").style.backgroundColor = "black";
-    document.getElementById("table1").style.fontSize = "larger";    
-} 
-function mouseOut1() {
-    
-    document.getElementById("bBit").style.backgroundColor = "#5551405e";
-    document.getElementById("cBit").style.backgroundColor = "#5551405e";
-    
-    document.getElementById("N1").style.backgroundColor = "grey"; 
-    document.getElementById("N1").style.color = "black";
-    document.getElementById("table1").style.color = "black"; 
-    document.getElementById("table1").style.backgroundColor = "grey";
-    document.getElementById("table1").style.fontSize = "inherit";
+  justify-content: left;
+  margin-left: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-function digit1() {
-    var y=document.getElementById("table1");
-    if(y.style.color===("red")){
-        
-        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("eBit").style.backgroundColor = "#5551405e";
-        document.getElementById("fBit").style.backgroundColor = "#5551405e";
-        document.getElementById("gBit").style.backgroundColor = "#5551405e";
-
-        document.getElementById("N1").style.backgroundColor = "grey"; 
-        document.getElementById("N1").style.color = "black";
-        document.getElementById("table1").style.color = "black"; 
-
-        document.getElementById("table1").style.backgroundColor = "grey";
-        document.getElementById("table1").style.fontSize = "inherit";
-        }   
-        else{  
-            
-            document.getElementById("bBit").style.backgroundColor = "red";    
-            document.getElementById("cBit").style.backgroundColor = "red";    
-
-            document.getElementById("N1").style.backgroundColor = "black"; 
-            document.getElementById("N1").style.color = "yellow";    
-            document.getElementById("table1").style.color = "red"; 
-            document.getElementById("table1").style.backgroundColor = "black";
-            document.getElementById("table1").style.fontSize = "larger";
-      } 
-    }
-
-
-function mouseOver2() {
-    document.getElementById("aBit").style.backgroundColor = "red";    
-    document.getElementById("bBit").style.backgroundColor = "red";    
-    document.getElementById("dBit").style.backgroundColor = "red"; 
-    document.getElementById("eBit").style.backgroundColor = "red";    
-    document.getElementById("gBit").style.backgroundColor = "red";    
-
-    document.getElementById("N2").style.backgroundColor = "black"; 
-    document.getElementById("N2").style.color = "yellow";    
-    document.getElementById("table2").style.color = "red"; 
-    document.getElementById("table2").style.backgroundColor = "black";
-    document.getElementById("table2").style.fontSize = "larger";    
-} 
-function mouseOut2() {
-    
-    document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-    document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-    document.getElementById("dBit").style.backgroundColor = "#5551405e"; 
-    document.getElementById("eBit").style.backgroundColor = "#5551405e";    
-    document.getElementById("gBit").style.backgroundColor = "#5551405e"; 
-    
-    document.getElementById("N2").style.backgroundColor = "grey"; 
-    document.getElementById("N2").style.color = "black";
-    document.getElementById("table2").style.color = "black"; 
-    document.getElementById("table2").style.backgroundColor = "grey";
-    document.getElementById("table2").style.fontSize = "inherit";
+.topicHead {
+  margin-left: 3vw;
+  font-size: 5vmin;
+  margin-bottom: 2vmin;
+  margin-top: 3.5vmin;
 }
-function digit2() {
-    var z=document.getElementById("table2");
-    if(z.style.color===("red")){      
-        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("eBit").style.backgroundColor = "#5551405e";
-        document.getElementById("fBit").style.backgroundColor = "#5551405e";
-        document.getElementById("gBit").style.backgroundColor = "#5551405e";
-
-        document.getElementById("N2").style.backgroundColor = "grey"; 
-        document.getElementById("N2").style.color = "black";
-        document.getElementById("table2").style.color = "black"; 
-
-        document.getElementById("table2").style.backgroundColor = "grey";
-        document.getElementById("table2").style.fontSize = "inherit";
-        }   
-        else{  
-            
-            document.getElementById("aBit").style.backgroundColor = "red";    
-            document.getElementById("bBit").style.backgroundColor = "red";    
-            document.getElementById("dBit").style.backgroundColor = "red";    
-            document.getElementById("eBit").style.backgroundColor = "red";    
-            document.getElementById("gBit").style.backgroundColor = "red";    
-
-            document.getElementById("N2").style.backgroundColor = "black"; 
-            document.getElementById("N2").style.color = "yellow";    
-            document.getElementById("table2").style.color = "red"; 
-            document.getElementById("table2").style.backgroundColor = "black";
-            document.getElementById("table2").style.fontSize = "larger";
-      } 
-    }
-
-
-    function mouseOver3() {
-        document.getElementById("aBit").style.backgroundColor = "red";    
-        document.getElementById("bBit").style.backgroundColor = "red";    
-        document.getElementById("cBit").style.backgroundColor = "red"; 
-        document.getElementById("dBit").style.backgroundColor = "red";    
-        document.getElementById("gBit").style.backgroundColor = "red";    
-    
-        document.getElementById("N3").style.backgroundColor = "black"; 
-        document.getElementById("N3").style.color = "yellow";
-
-        document.getElementById("table3").style.color = "red"; 
-        document.getElementById("table3").style.backgroundColor = "black";
-        document.getElementById("table3").style.fontSize = "larger";    
-    } 
-    function mouseOut3() {
-        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("gBit").style.backgroundColor = "#5551405e";  
-        
-        document.getElementById("N3").style.backgroundColor = "grey"; 
-        document.getElementById("N3").style.color = "black";
-
-        document.getElementById("table3").style.color = "black"; 
-        document.getElementById("table3").style.backgroundColor = "grey";
-        document.getElementById("table3").style.fontSize = "inherit";
-    }
-    function digit3() {
-        var m=document.getElementById("table3");
-        if(m.style.color===("red")){      
-        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-        document.getElementById("eBit").style.backgroundColor = "#5551405e";
-        document.getElementById("fBit").style.backgroundColor = "#5551405e";
-        document.getElementById("gBit").style.backgroundColor = "#5551405e";
-
-            document.getElementById("N3").style.backgroundColor = "grey"; 
-            document.getElementById("N3").style.color = "black";
-
-            document.getElementById("table3").style.color = "black"; 
-            document.getElementById("table3").style.backgroundColor = "grey";
-            document.getElementById("table3").style.fontSize = "inherit";
-            }   
-            else{  
-                
-                document.getElementById("aBit").style.backgroundColor = "red";    
-                document.getElementById("bBit").style.backgroundColor = "red";    
-                document.getElementById("cBit").style.backgroundColor = "red"; 
-                document.getElementById("dBit").style.backgroundColor = "red";    
-                document.getElementById("gBit").style.backgroundColor = "red";    
-    
-                document.getElementById("N3").style.backgroundColor = "black"; 
-                document.getElementById("N3").style.color = "yellow"; 
-
-                document.getElementById("table3").style.color = "red"; 
-                document.getElementById("table3").style.backgroundColor = "black";
-                document.getElementById("table3").style.fontSize = "larger";
-          } 
-        }
-
-    
-        function mouseOver4() {
-            document.getElementById("bBit").style.backgroundColor = "red";    
-            document.getElementById("cBit").style.backgroundColor = "red"; 
-            document.getElementById("gBit").style.backgroundColor = "red";    
-            document.getElementById("fBit").style.backgroundColor = "red";    
-
-            document.getElementById("N4").style.backgroundColor = "black"; 
-            document.getElementById("N4").style.color = "yellow";
-    
-            document.getElementById("table4").style.color = "red"; 
-            document.getElementById("table4").style.backgroundColor = "black";
-            document.getElementById("table4").style.fontSize = "larger";    
-        } 
-        function mouseOut4() {   
-            document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-            document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-            document.getElementById("gBit").style.backgroundColor = "#5551405e";  
-            document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
-
-            document.getElementById("N4").style.backgroundColor = "grey"; 
-            document.getElementById("N4").style.color = "black";
-    
-            document.getElementById("table4").style.color = "black"; 
-            document.getElementById("table4").style.backgroundColor = "grey";
-            document.getElementById("table4").style.fontSize = "inherit";
-        }
-        function digit4() {
-            var m=document.getElementById("table4");
-            if(m.style.color===("red")){      
-            document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-            document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-            document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-            document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-            document.getElementById("eBit").style.backgroundColor = "#5551405e";
-            document.getElementById("fBit").style.backgroundColor = "#5551405e";
-            document.getElementById("gBit").style.backgroundColor = "#5551405e";
-    
-                document.getElementById("N4").style.backgroundColor = "grey"; 
-                document.getElementById("N4").style.color = "black";
-    
-                document.getElementById("table4").style.color = "black"; 
-                document.getElementById("table4").style.backgroundColor = "grey";
-                document.getElementById("table4").style.fontSize = "inherit";
-                }   
-                else{  
-                    
-                    document.getElementById("bBit").style.backgroundColor = "red";    
-            document.getElementById("cBit").style.backgroundColor = "red"; 
-            document.getElementById("gBit").style.backgroundColor = "red";    
-            document.getElementById("fBit").style.backgroundColor = "red";  
-        
-                    document.getElementById("N4").style.backgroundColor = "black"; 
-                    document.getElementById("N4").style.color = "yellow"; 
-    
-                    document.getElementById("table4").style.color = "red"; 
-                    document.getElementById("table4").style.backgroundColor = "black";
-                    document.getElementById("table4").style.fontSize = "larger";
-              } 
-            }
-
-
-            function mouseOver5() {
-                document.getElementById("aBit").style.backgroundColor = "red";    
-                document.getElementById("cBit").style.backgroundColor = "red"; 
-                document.getElementById("dBit").style.backgroundColor = "red";    
-                document.getElementById("fBit").style.backgroundColor = "red"; 
-                document.getElementById("gBit").style.backgroundColor = "red";    
-   
-                document.getElementById("N5").style.backgroundColor = "black"; 
-                document.getElementById("N5").style.color = "yellow";
-        
-                document.getElementById("table5").style.color = "red"; 
-                document.getElementById("table5").style.backgroundColor = "black";
-                document.getElementById("table5").style.fontSize = "larger";    
-            } 
-            function mouseOut5() {     
-                document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-                document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-                document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
-                document.getElementById("gBit").style.backgroundColor = "#5551405e";    
-    
-                document.getElementById("N5").style.backgroundColor = "grey"; 
-                document.getElementById("N5").style.color = "black";
-        
-                document.getElementById("table5").style.color = "black"; 
-                document.getElementById("table5").style.backgroundColor = "grey";
-                document.getElementById("table5").style.fontSize = "inherit";
-            }
-            function digit5() {
-                var m=document.getElementById("table5");
-                if(m.style.color===("red")){      
-                document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-                document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-                document.getElementById("eBit").style.backgroundColor = "#5551405e";
-                document.getElementById("fBit").style.backgroundColor = "#5551405e";
-                document.getElementById("gBit").style.backgroundColor = "#5551405e";
-        
-                    document.getElementById("N5").style.backgroundColor = "grey"; 
-                    document.getElementById("N5").style.color = "black";
-        
-                    document.getElementById("table5").style.color = "black"; 
-                    document.getElementById("table5").style.backgroundColor = "grey";
-                    document.getElementById("table5").style.fontSize = "inherit";
-                    }   
-                    else{  
-                        
-                        document.getElementById("aBit").style.backgroundColor = "red";    
-                document.getElementById("cBit").style.backgroundColor = "red"; 
-                document.getElementById("dBit").style.backgroundColor = "red";    
-                document.getElementById("fBit").style.backgroundColor = "red"; 
-                document.getElementById("gBit").style.backgroundColor = "red"; 
-            
-                        document.getElementById("N5").style.backgroundColor = "black"; 
-                        document.getElementById("N5").style.color = "yellow"; 
-        
-                        document.getElementById("table5").style.color = "red"; 
-                        document.getElementById("table5").style.backgroundColor = "black";
-                        document.getElementById("table5").style.fontSize = "larger";
-                  } 
-                }
-
-                function mouseOver6() {
-                    document.getElementById("aBit").style.backgroundColor = "red";    
-                    document.getElementById("cBit").style.backgroundColor = "red"; 
-                    document.getElementById("dBit").style.backgroundColor = "red"; 
-                    document.getElementById("eBit").style.backgroundColor = "red";    
-                    document.getElementById("fBit").style.backgroundColor = "red"; 
-                    document.getElementById("gBit").style.backgroundColor = "red";    
-       
-                    document.getElementById("N6").style.backgroundColor = "black"; 
-                    document.getElementById("N6").style.color = "yellow";
-            
-                    document.getElementById("table6").style.color = "red"; 
-                    document.getElementById("table6").style.backgroundColor = "black";
-                    document.getElementById("table6").style.fontSize = "larger";    
-                } 
-                function mouseOut6() {     
-                    document.getElementById("aBit").style.backgroundColor = "#5551405e";
-                    document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                    document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                    document.getElementById("dBit").style.backgroundColor = "#5551405e";  
-                    document.getElementById("eBit").style.backgroundColor = "#5551405e";  
-                    document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
-                    document.getElementById("gBit").style.backgroundColor = "#5551405e";    
-        
-                    document.getElementById("N6").style.backgroundColor = "grey"; 
-                    document.getElementById("N6").style.color = "black";
-            
-                    document.getElementById("table6").style.color = "black"; 
-                    document.getElementById("table6").style.backgroundColor = "grey";
-                    document.getElementById("table6").style.fontSize = "inherit";
-                }
-                function digit6() {
-                    var m=document.getElementById("table6");
-                    if(m.style.color===("red")){      
-                    document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-                    document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                    document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                    document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-                    document.getElementById("eBit").style.backgroundColor = "#5551405e";
-                    document.getElementById("fBit").style.backgroundColor = "#5551405e";
-                    document.getElementById("gBit").style.backgroundColor = "#5551405e";
-            
-                        document.getElementById("N6").style.backgroundColor = "grey"; 
-                        document.getElementById("N6").style.color = "black";
-            
-                        document.getElementById("table6").style.color = "black"; 
-                        document.getElementById("table6").style.backgroundColor = "grey";
-                        document.getElementById("table6").style.fontSize = "inherit";
-                        }   
-                        else{  
-                            
-                            document.getElementById("aBit").style.backgroundColor = "red";    
-                    document.getElementById("cBit").style.backgroundColor = "red"; 
-                    document.getElementById("dBit").style.backgroundColor = "red"; 
-                    document.getElementById("eBit").style.backgroundColor = "red";    
-                    document.getElementById("fBit").style.backgroundColor = "red"; 
-                    document.getElementById("gBit").style.backgroundColor = "red";  
-                
-                            document.getElementById("N6").style.backgroundColor = "black"; 
-                            document.getElementById("N6").style.color = "yellow"; 
-            
-                            document.getElementById("table6").style.color = "red"; 
-                            document.getElementById("table6").style.backgroundColor = "black";
-                            document.getElementById("table6").style.fontSize = "larger";
-                      } 
-                    }
-
-
-
-                    function mouseOver7() {
-                        document.getElementById("aBit").style.backgroundColor = "red";    
-                        document.getElementById("bBit").style.backgroundColor = "red"; 
-                        document.getElementById("cBit").style.backgroundColor = "red"; 
-                            
-           
-                        document.getElementById("N7").style.backgroundColor = "black"; 
-                        document.getElementById("N7").style.color = "yellow";
-                
-                        document.getElementById("table7").style.color = "red"; 
-                        document.getElementById("table7").style.backgroundColor = "black";
-                        document.getElementById("table7").style.fontSize = "larger";    
-                    } 
-                    function mouseOut7() {     
-                        document.getElementById("aBit").style.backgroundColor = "#5551405e";
-                        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                        document.getElementById("dBit").style.backgroundColor = "#5551405e";  
-                        document.getElementById("eBit").style.backgroundColor = "#5551405e";  
-                        document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
-                        document.getElementById("gBit").style.backgroundColor = "#5551405e";    
-            
-                        document.getElementById("N7").style.backgroundColor = "grey"; 
-                        document.getElementById("N7").style.color = "black";
-                
-                        document.getElementById("table7").style.color = "black"; 
-                        document.getElementById("table7").style.backgroundColor = "grey";
-                        document.getElementById("table7").style.fontSize = "inherit";
-                    }
-                    function digit7() {
-                        var m=document.getElementById("table7");
-                        if(m.style.color===("red")){      
-                        document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-                        document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                        document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                        document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-                        document.getElementById("eBit").style.backgroundColor = "#5551405e";
-                        document.getElementById("fBit").style.backgroundColor = "#5551405e";
-                        document.getElementById("gBit").style.backgroundColor = "#5551405e";
-                
-                            document.getElementById("N7").style.backgroundColor = "grey"; 
-                            document.getElementById("N7").style.color = "black";
-                
-                            document.getElementById("table7").style.color = "black"; 
-                            document.getElementById("table7").style.backgroundColor = "grey";
-                            document.getElementById("table7").style.fontSize = "inherit";
-                            }   
-                            else{  
-                                
-                                document.getElementById("aBit").style.backgroundColor = "red";    
-                        document.getElementById("bBit").style.backgroundColor = "red"; 
-                        document.getElementById("cBit").style.backgroundColor = "red"; 
-                         
-                    
-                                document.getElementById("N7").style.backgroundColor = "black"; 
-                                document.getElementById("N7").style.color = "yellow"; 
-                
-                                document.getElementById("table7").style.color = "red"; 
-                                document.getElementById("table7").style.backgroundColor = "black";
-                                document.getElementById("table7").style.fontSize = "larger";
-                          } 
-                        }
-
-
-                        function mouseOver8() {
-                            document.getElementById("aBit").style.backgroundColor = "red";    
-                            document.getElementById("bBit").style.backgroundColor = "red"; 
-                            document.getElementById("cBit").style.backgroundColor = "red"; 
-                            document.getElementById("dBit").style.backgroundColor = "red"; 
-                            document.getElementById("eBit").style.backgroundColor = "red"; 
-                            document.getElementById("fBit").style.backgroundColor = "red"; 
-                            document.getElementById("gBit").style.backgroundColor = "red"; 
-
-               
-                            document.getElementById("N8").style.backgroundColor = "black"; 
-                            document.getElementById("N8").style.color = "yellow";
-                    
-                            document.getElementById("table8").style.color = "red"; 
-                            document.getElementById("table8").style.backgroundColor = "black";
-                            document.getElementById("table8").style.fontSize = "larger";    
-                        } 
-                        function mouseOut8() {     
-                            document.getElementById("aBit").style.backgroundColor = "#5551405e";
-                            document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                            document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                            document.getElementById("dBit").style.backgroundColor = "#5551405e";  
-                            document.getElementById("eBit").style.backgroundColor = "#5551405e";  
-                            document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
-                            document.getElementById("gBit").style.backgroundColor = "#5551405e";    
-                
-                            document.getElementById("N8").style.backgroundColor = "grey"; 
-                            document.getElementById("N8").style.color = "black";
-                    
-                            document.getElementById("table8").style.color = "black"; 
-                            document.getElementById("table8").style.backgroundColor = "grey";
-                            document.getElementById("table8").style.fontSize = "inherit";
-                        }
-                        function digit8() {
-                            var m=document.getElementById("table8");
-                            if(m.style.color===("red")){      
-                            document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-                            document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                            document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                            document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-                            document.getElementById("eBit").style.backgroundColor = "#5551405e";
-                            document.getElementById("fBit").style.backgroundColor = "#5551405e";
-                            document.getElementById("gBit").style.backgroundColor = "#5551405e";
-                    
-                                document.getElementById("N8").style.backgroundColor = "grey"; 
-                                document.getElementById("N8").style.color = "black";
-                    
-                                document.getElementById("table8").style.color = "black"; 
-                                document.getElementById("table8").style.backgroundColor = "grey";
-                                document.getElementById("table8").style.fontSize = "inherit";
-                                }   
-                                else{  
-                                    
-                                    document.getElementById("aBit").style.backgroundColor = "red";    
-                                    document.getElementById("bBit").style.backgroundColor = "red"; 
-                                    document.getElementById("cBit").style.backgroundColor = "red"; 
-                                    document.getElementById("dBit").style.backgroundColor = "red"; 
-                                    document.getElementById("eBit").style.backgroundColor = "red"; 
-                                    document.getElementById("fBit").style.backgroundColor = "red"; 
-                                    document.getElementById("gBit").style.backgroundColor = "red"; 
-                             
-                        
-                                    document.getElementById("N8").style.backgroundColor = "black"; 
-                                    document.getElementById("N8").style.color = "yellow"; 
-                    
-                                    document.getElementById("table8").style.color = "red"; 
-                                    document.getElementById("table8").style.backgroundColor = "black";
-                                    document.getElementById("table8").style.fontSize = "larger";
-                              } 
-                            }
-
-
-
-                            function mouseOver9() {
-                                document.getElementById("aBit").style.backgroundColor = "red";    
-                                document.getElementById("bBit").style.backgroundColor = "red"; 
-                                document.getElementById("cBit").style.backgroundColor = "red"; 
-                                document.getElementById("dBit").style.backgroundColor = "red"; 
-                                document.getElementById("fBit").style.backgroundColor = "red"; 
-                                document.getElementById("gBit").style.backgroundColor = "red"; 
-    
-                   
-                                document.getElementById("N9").style.backgroundColor = "black"; 
-                                document.getElementById("N9").style.color = "yellow";
-                        
-                                document.getElementById("table9").style.color = "red"; 
-                                document.getElementById("table9").style.backgroundColor = "black";
-                                document.getElementById("table9").style.fontSize = "larger";    
-                            } 
-                            function mouseOut9() {     
-                                document.getElementById("aBit").style.backgroundColor = "#5551405e";
-                                document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                                document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                                document.getElementById("dBit").style.backgroundColor = "#5551405e";  
-                                document.getElementById("eBit").style.backgroundColor = "#5551405e";  
-                                document.getElementById("fBit").style.backgroundColor = "#5551405e"; 
-                                document.getElementById("gBit").style.backgroundColor = "#5551405e";    
-                    
-                                document.getElementById("N9").style.backgroundColor = "grey"; 
-                                document.getElementById("N9").style.color = "black";
-                        
-                                document.getElementById("table9").style.color = "black"; 
-                                document.getElementById("table9").style.backgroundColor = "grey";
-                                document.getElementById("table9").style.fontSize = "inherit";
-                            }
-                            function digit9() {
-                                var m=document.getElementById("table9");
-                                if(m.style.color===("red")){      
-                                document.getElementById("aBit").style.backgroundColor = "#5551405e";    
-                                document.getElementById("bBit").style.backgroundColor = "#5551405e";    
-                                document.getElementById("cBit").style.backgroundColor = "#5551405e"; 
-                                document.getElementById("dBit").style.backgroundColor = "#5551405e";    
-                                document.getElementById("eBit").style.backgroundColor = "#5551405e";
-                                document.getElementById("fBit").style.backgroundColor = "#5551405e";
-                                document.getElementById("gBit").style.backgroundColor = "#5551405e";
-                        
-                                    document.getElementById("N9").style.backgroundColor = "grey"; 
-                                    document.getElementById("N9").style.color = "black";
-                        
-                                    document.getElementById("table9").style.color = "black"; 
-                                    document.getElementById("table9").style.backgroundColor = "grey";
-                                    document.getElementById("table9").style.fontSize = "inherit";
-                                    }   
-                                    else{  
-                                        
-                                        document.getElementById("aBit").style.backgroundColor = "red";    
-                                        document.getElementById("bBit").style.backgroundColor = "red"; 
-                                        document.getElementById("cBit").style.backgroundColor = "red"; 
-                                        document.getElementById("dBit").style.backgroundColor = "red"; 
-                                        document.getElementById("fBit").style.backgroundColor = "red"; 
-                                        document.getElementById("gBit").style.backgroundColor = "red"; 
-                                 
-                            
-                                        document.getElementById("N9").style.backgroundColor = "black"; 
-                                        document.getElementById("N9").style.color = "yellow"; 
-                        
-                                        document.getElementById("table9").style.color = "red"; 
-                                        document.getElementById("table9").style.backgroundColor = "black";
-                                        document.getElementById("table9").style.fontSize = "larger";
-                                  } 
-                                }
-
-function amouseOverBit2(){
-    var m=document.getElementById("aBit2");
-    if(m.style.backgroundColor===("red")){
-    document.getElementById("aBit2").style.backgroundColor = "red"; 
-    }  
-    else{
-        document.getElementById("aBit2").style.backgroundColor = "yellow"; 
-
-    }
+.topic {
+  margin-right: 16vw;
+  margin-left: 2vw;
+  font-size: 3.5vmin;
+  margin-top: 5vmin;
+  margin-bottom: 0;
+  width: 33vw;
+  border-radius: 13px;
+  background-color: beige;
+  text-align: left;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
-function amouseOutBit2(){
-    var m=document.getElementById("aBit2");
-     if(m.style.backgroundColor===("yellow")){
-        document.getElementById("aBit2").style.backgroundColor = "#5551405e";
-     }
-     
-     else if(m.style.backgroundColor===("#5551405e")){
-        document.getElementById("aBit2").style.backgroundColor = "#5551405e";
-     }
-     else{
-    document.getElementById("aBit2").style.backgroundColor = "red";
-    }
+#section2 {
+  width: 92vw;
+  display: block;
+  margin: auto;
+  font-size: 4.2vmin;
+  border: 2px solid black;
+  border-radius: 0px 0px 10px 10px;
+  border-style: dashed solid solid solid;
+  font-family: monospace;
+  letter-spacing: 0.05vw;
+  text-align: justify;
+}
+#theory {
+  margin-top: 0px;
+  padding-top: 1vh;
+  height: inherit;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-justify: auto;
+  display: block;
+}
+#topic1 {
+  display: none;
+}
+#topic2 {
+  display: none;
+}
+#topic3 {
+  display: none;
 }
 
- function aBit2() { 
-    var m=document.getElementById("aBit2");
-    if(m.style.backgroundColor===("red")){
-        document.getElementById("aBit2").style.backgroundColor = "yellow";
+#topic-section .topic:hover {
+  color: white;
+  background-color: black;
+}
+#section3 {
+  display: flex;
+  flex-direction: row-reverse;
+  height: auto;
+  scroll-behavior: smooth;
+}
+#tablecontainer {
+  height: 83vmin;
+  width: 46vw;
+}
+#section4 {
+  display: flex;
+  flex-direction: row-reverse;
+  height: auto;
+  scroll-behavior: smooth;
+}
+#tablecontainer2 {
+  height: 63vh;
+  width: 46vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-    }
-    else{
-            document.getElementById("aBit2").style.backgroundColor = "red";
-    }
+  border: 2px solid black;
+}
+#tableName {
+  height: 5vmin;
+  font-size: 5vmin;
+  background-color: rgb(50 40 65 / 30%);
+  border: 2px solid black;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bolder;
+}
 
+.table-row{
+  cursor: pointer;
+}
+#table {
+  margin-top: 7vmin;
+  height: inherit;
+  width: inherit;
+  font-size: 6vmin;
+  background-color: rgb(198 206 18);
+  text-align: center;
+  border-collapse: collapse;
+  position: absolute;
+}
+#digit {
+  height: inherit;
+  width: 51vw;
+  background-color: red;
+  background-color: grey;
+  border: 3px solid black;
+  margin-top: 7vmin;
+}
+#digit2 {
+  height: 63vh;
+  width: 51vw;
+  background-color: red;
+  background-color: grey;
+  border: 3px solid black;
+}
+
+@media only screen and (max-width: 550px) {
+  #section3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #tablecontainer {
+    height: inherit;
+    width: 80vw;
+    font-size: 6vmin;
+    background-color: rgb(22, 168, 212);
+    text-align: center;
+    align-self: center;
+  }
+  #digit {
+    height: 93vmin;
+    width: 80vw;
+    align-self: center;
+    background-color: grey;
+    border: 3px solid black;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #section4 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #tablecontainer2 {
+    height: inherit;
+    width: 80vw;
+    font-size: 6vmin;
+    background-color: rgb(22, 168, 212);
+    text-align: center;
+    align-self: center;
+  }
+  #digit2 {
+    height: 73vmin;
+    width: 80vw;
+    align-self: center;
+    background-color: grey;
+    border: 3px solid black;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #section4 {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    top: 89vmin;
+  }
+  #tablecontainer2 {
+    height: inherit;
+    width: 80vw;
+    font-size: 6vmin;
+    background-color: rgb(22, 168, 212);
+    text-align: center;
+    align-self: center;
+  }
+  #digit2 {
+    height: 73vmin;
+    width: 80vw;
+    align-self: center;
+    background-color: grey;
+    border: 3px solid black;
+  }
+}
+#num {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0);
+}
+
+#num a {
+  cursor: pointer;
+}
+#aBit {
+  height: 6vmin;
+  width: 21vw;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 5vmin;
+  margin-left: 11vw;
+  border-radius: 34%;
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#bBit {
+  height: 20vmin;
+  width: 6vmin;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 10vmin;
+  margin-left: 31vw;
+  border-radius: 34%;
+  transform: rotate(4deg);
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#cBit {
+  height: 20vmin;
+  width: 6vmin;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 32vmin;
+  margin-left: 30vw;
+  border-radius: 34%;
+  transform: rotate(4deg);
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#dBit {
+  height: 6vmin;
+  width: 21vw;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 51vmin;
+  margin-left: 9vw;
+  border-radius: 34%;
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#eBit {
+  height: 20vmin;
+  width: 6vmin;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 32vmin;
+  margin-left: 7vw;
+  border-radius: 34%;
+  transform: rotate(4deg);
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#fBit {
+  height: 20vmin;
+  width: 6vmin;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 10vmin;
+  margin-left: 8vw;
+  border-radius: 34%;
+  transform: rotate(4deg);
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#gBit {
+  height: 6vmin;
+  width: 21vw;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 28vmin;
+  margin-left: 10vw;
+  border-radius: 34%;
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#selectNum {
+  display: flex;
+  font-size: 7vmin;
+  width: auto;
+  margin-left: 3vw;
+  margin: 2vh 2vw 2vh 4vw;
+}
+
+#divider1 {
+  font-size: 5vmin;
+  color: black;
+  font-weight: bolder;
+  height: 10vmin;
+  width: 100vw;
+  margin-top: 30vmin;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  text-align: center;
+}
+#divider2 {
+  font-size: 6vmin;
+  color: black;
+  font-weight: bolder;
+  height: 10vmin;
+  width: 100vw;
+  margin-top: 0vmin;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  margin-bottom: 3vh;
+  /* position: relative; */
+  /* top: 76vmin; */
+}
+
+.num-btn{
+  cursor:pointer;
+  margin-bottom: 2vh;
+}
+#N0 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table0 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+}
+#N1 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table1 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+}
+#N2 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table2 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+}
+#N3 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table3 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+}
+#N4 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table4 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+}
+#N5 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table5 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+}
+#N6 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table6 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+}
+#N7 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table7 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+  width: 9vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+}
+#N8 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table8 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+  width: 9vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+}
+#N9 {
+  border-radius: 5px;
+  width: 8vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+  background-color: grey;
+}
+
+#table9 {
+  color: black;
+  background-color: grey;
+  font-size: inherit;
+  width: 9vmin;
+  border-radius: 5px;
+  height: 8vmin;
+  font-size: 6vmin;
+}
+#getCode {
+  border-radius: 50px;
+  height: 9vmin;
+  width: 63%;
+  background-color: red;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-top: 2vmin;
+  cursor: pointer;
+}
+#getCode:hover{
+  box-shadow: 0px 0px 5px 5px red ;
+}
+#yourCode {
+  border-radius: 50px;
+  height: 18vmin;
+  width: 63%;
+  background-color: rgb(0, 255, 149);
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-top: 2vmin;
+}
+#reset {
+  border-radius: 50px;
+  height: 9vmin;
+  width: 63%;
+  background-color: rgb(60, 0, 255);
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-top: 2vmin;
+  cursor: pointer;
+}
+#reset:hover{
+  box-shadow: 0px 0px 3px 3px rgb(60, 0, 255) ;
 }
 
 
+#aBit2 {
+  height: 6vmin;
+  width: 21vw;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 5vmin;
+  margin-left: 11vw;
+  border-radius: 34%;
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#bBit2 {
+  height: 20vmin;
+  width: 6vmin;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 10vmin;
+  margin-left: 31vw;
 
+  border-radius: 34%;
+  transform: rotate(4deg);
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#cBit2 {
+  height: 20vmin;
+  width: 6vmin;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 32vmin;
+  margin-left: 30vw;
 
-function bmouseOverBit2(){
-    var m=document.getElementById("bBit2");
-    if(m.style.backgroundColor===("red")){
-    document.getElementById("bBit2").style.backgroundColor = "red"; 
-    }  
-    else{
-        document.getElementById("bBit2").style.backgroundColor = "yellow"; 
+  border-radius: 34%;
+  transform: rotate(4deg);
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#dBit2 {
+  height: 6vmin;
+  width: 21vw;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 51vmin;
+  margin-left: 9vw;
+  border-radius: 34%;
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#eBit2 {
+  height: 20vmin;
+  width: 6vmin;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 32vmin;
+  margin-left: 7vw;
 
-    }
+  border-radius: 34%;
+  transform: rotate(4deg);
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#fBit2 {
+  height: 20vmin;
+  width: 6vmin;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 10vmin;
+  margin-left: 8vw;
+
+  border-radius: 34%;
+  transform: rotate(4deg);
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#gBit2 {
+  height: 6vmin;
+  width: 21vw;
+  background-color: #5551405e;
+  position: absolute;
+  margin-top: 28vmin;
+  margin-left: 10vw;
+  border-radius: 34%;
+  font-size: 3vmax;
+  text-align: center;
+  color: yellow;
+}
+#zeroOne {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 28vmin;
+  opacity: 0;
+}
+#navlink1 {
+  margin-top: 11vmin;
+  height: 25vmin;
+  width: 99vw;
+  background-color: rgb(255, 0, 0);
+  opacity: 0;
+}
+#navlink2 {
+  height: 13vmin;
+  width: 97vw;
+  /* background-color: rgb(0, 247, 255); */
+  background-image: url("char.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  /* position: relative; */
+  /* top: 83vmin; */
 }
 
-function bmouseOutBit2(){
-    var m=document.getElementById("bBit2");
-     if(m.style.backgroundColor===("yellow")){
-        document.getElementById("bBit2").style.backgroundColor = "#5551405e";
-     }
-     
-     else if(m.style.backgroundColor===("#5551405e")){
-        document.getElementById("bBit2").style.backgroundColor = "#5551405e";
-     }
-     else{
-    document.getElementById("bBit2").style.backgroundColor = "red";
-    }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 3vh;
+  right: 2vw;
+  border-radius: 10px;
+  border: 2px solid black;
+  z-index: 10;
 }
 
- function bBit2() { 
-    var m=document.getElementById("bBit2");
-    if(m.style.backgroundColor===("red")){
-        document.getElementById("bBit2").style.backgroundColor = "yellow";
-
-    }
-    else{
-            document.getElementById("bBit2").style.backgroundColor = "red";
-    }
-
+.topnav #myLinks {
+  height: inherit;
+  display: none;
 }
 
-
-
-function cmouseOverBit2(){
-    var m=document.getElementById("cBit2");
-    if(m.style.backgroundColor===("red")){
-    document.getElementById("cBit2").style.backgroundColor = "red"; 
-    }  
-    else{
-        document.getElementById("cBit2").style.backgroundColor = "yellow"; 
-
-    }
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* font-size: 2rem; */
+  display: block;
 }
 
-function cmouseOutBit2(){
-    var m=document.getElementById("cBit2");
-     if(m.style.backgroundColor===("yellow")){
-        document.getElementById("cBit2").style.backgroundColor = "#5551405e";
-     }
-     
-     else if(m.style.backgroundColor===("#5551405e")){
-        document.getElementById("cBit2").style.backgroundColor = "#5551405e";
-     }
-     else{
-    document.getElementById("cBit2").style.backgroundColor = "red";
-    }
+.topnav a.icon {
+  height: 1.8rem;
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
 }
 
- function cBit2() { 
-    var m=document.getElementById("cBit2");
-    if(m.style.backgroundColor===("red")){
-        document.getElementById("cBit2").style.backgroundColor = "yellow";
-
-    }
-    else{
-            document.getElementById("cBit2").style.backgroundColor = "red";
-    }
-
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-
-
-
-function dmouseOverBit2(){
-    var m=document.getElementById("dBit2");
-    if(m.style.backgroundColor===("red")){
-    document.getElementById("dBit2").style.backgroundColor = "red"; 
-    }  
-    else{
-        document.getElementById("dBit2").style.backgroundColor = "yellow"; 
-
-    }
+.active {
+  background-color: darkslategray;
+  color: white;
+  width: 25vw;
 }
 
-function dmouseOutBit2(){
-    var m=document.getElementById("dBit2");
-     if(m.style.backgroundColor===("yellow")){
-        document.getElementById("dBit2").style.backgroundColor = "#5551405e";
-     }
-     
-     else if(m.style.backgroundColor===("#5551405e")){
-        document.getElementById("dBit2").style.backgroundColor = "#5551405e";
-     }
-     else{
-    document.getElementById("dBit2").style.backgroundColor = "red";
-    }
+@media (max-width: 1050px) {
+  .topnav {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .topnav {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1020px) {
+  .topic {
+    margin-top: 3vmin;
+  }
+}
+@media (max-width: 2076px) {
+  .topnav {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 551px) {
+  #section4 {
+    position: relative;
+    top: 86vmin;
+  }
+  #divider2 {
+    position: relative;
+    top: 76vmin;
+  }
+  #navlink2 {
+    position: relative;
+    top: 83vmin;
+  }
+}
+#num3 {
+  height: 70vh;
+  width: 50vw;
+  background-color: grey;
+  margin-top: 20vh;
+  display: grid;
+  grid-template-areas:
+    "digA digA digA"
+    "digF digN digB"
+    "digG digG digG"
+    "digE digN digC"
+    "digD digD digD";
 }
 
- function dBit2() { 
-    var m=document.getElementById("dBit2");
-    if(m.style.backgroundColor===("red")){
-        document.getElementById("dBit2").style.backgroundColor = "yellow";
-
-    }
-    else{
-            document.getElementById("dBit2").style.backgroundColor = "red";
-    }
-
+#aBit3 {
+  height: 10vh;
+  width: 50vw;
+  background-color: red;
+  grid-area: digA;
 }
-
-
-function emouseOverBit2(){
-    var m=document.getElementById("eBit2");
-    if(m.style.backgroundColor===("red")){
-    document.getElementById("eBit2").style.backgroundColor = "red"; 
-    }  
-    else{
-        document.getElementById("eBit2").style.backgroundColor = "yellow"; 
-
-    }
+#bBit3 {
+  height: 20vh;
+  width: 8vw;
+  background-color: red;
+  grid-area: digB;
 }
-
-function emouseOutBit2(){
-    var m=document.getElementById("eBit2");
-     if(m.style.backgroundColor===("yellow")){
-        document.getElementById("eBit2").style.backgroundColor = "#5551405e";
-     }
-     
-     else if(m.style.backgroundColor===("#5551405e")){
-        document.getElementById("eBit2").style.backgroundColor = "#5551405e";
-     }
-     else{
-    document.getElementById("eBit2").style.backgroundColor = "red";
-    }
+#cBit3 {
+  height: 20vh;
+  width: 8vw;
+  background-color: red;
+  grid-area: digC;
 }
-
- function eBit2() { 
-    var m=document.getElementById("eBit2");
-    if(m.style.backgroundColor===("red")){
-        document.getElementById("eBit2").style.backgroundColor = "yellow";
-
-    }
-    else{
-            document.getElementById("eBit2").style.backgroundColor = "red";
-    }
-
+#dBit3 {
+  height: 10vh;
+  width: 50vw;
+  background-color: red;
+  grid-area: digD;
 }
-
-function fmouseOverBit2(){
-    var m=document.getElementById("fBit2");
-    if(m.style.backgroundColor===("red")){
-    document.getElementById("fBit2").style.backgroundColor = "red"; 
-    }  
-    else{
-        document.getElementById("fBit2").style.backgroundColor = "yellow"; 
-
-    }
+#eBit3 {
+  height: 20vh;
+  width: 8vw;
+  background-color: red;
+  grid-area: digE;
 }
-
-function fmouseOutBit2(){
-    var m=document.getElementById("fBit2");
-     if(m.style.backgroundColor===("yellow")){
-        document.getElementById("fBit2").style.backgroundColor = "#5551405e";
-     }
-     
-     else if(m.style.backgroundColor===("#5551405e")){
-        document.getElementById("fBit2").style.backgroundColor = "#5551405e";
-     }
-     else{
-    document.getElementById("fBit2").style.backgroundColor = "red";
-    }
+#fBit3 {
+  height: 20vh;
+  width: 8vw;
+  background-color: red;
+  grid-area: digF;
 }
-
- function fBit2() { 
-    var m=document.getElementById("fBit2");
-    if(m.style.backgroundColor===("red")){
-        document.getElementById("fBit2").style.backgroundColor = "yellow";
-
-    }
-    else{
-            document.getElementById("fBit2").style.backgroundColor = "red";
-    }
-
+#gBit3 {
+  height: 10vh;
+  width: 50vw;
+  background-color: red;
+  grid-area: digB;
 }
-
-
-function gmouseOverBit2(){
-    var m=document.getElementById("gBit2");
-    if(m.style.backgroundColor===("red")){
-    document.getElementById("gBit2").style.backgroundColor = "red"; 
-    }  
-    else{
-        document.getElementById("gBit2").style.backgroundColor = "yellow"; 
-
-    }
-}
-
-function gmouseOutBit2(){
-    var m=document.getElementById("gBit2");
-     if(m.style.backgroundColor===("yellow")){
-        document.getElementById("gBit2").style.backgroundColor = "#5551405e";
-     }
-     
-     else if(m.style.backgroundColor===("#5551405e")){
-        document.getElementById("gBit2").style.backgroundColor = "#5551405e";
-     }
-     else{
-    document.getElementById("gBit2").style.backgroundColor = "red";
-    }
-}
-
- function gBit2() { 
-    var m=document.getElementById("gBit2");
-    if(m.style.backgroundColor===("red")){
-        document.getElementById("gBit2").style.backgroundColor = "yellow";
-
-    }
-    else{
-            document.getElementById("gBit2").style.backgroundColor = "red";
-    }
-
-}
-
-document.getElementById("getCode").onclick = function() {getCode()};
-
-function getCode(){
-    var a=document.getElementById("aBit2");
-    if(a.style.backgroundColor===("red")){
-    document.getElementById("aC").innerHTML = "1"; 
-    }  
-    else{
-        document.getElementById("aC").innerHTML = "0"; 
-    }
-
-    var b=document.getElementById("bBit2");
-    if(b.style.backgroundColor===("red")){
-    document.getElementById("bC").innerHTML = "1"; 
-    }  
-    else{
-        document.getElementById("bC").innerHTML = "0"; 
-    }
-
-    var c=document.getElementById("cBit2");
-    if(c.style.backgroundColor===("red")){
-    document.getElementById("cC").innerHTML = "1"; 
-    }  
-    else{
-        document.getElementById("cC").innerHTML = "0"; 
-    }
-
-    var d=document.getElementById("dBit2");
-    if(d.style.backgroundColor===("red")){
-    document.getElementById("dC").innerHTML = "1"; 
-    }  
-    else{
-        document.getElementById("dC").innerHTML = "0"; 
-    }
-
-    var e=document.getElementById("eBit2");
-    if(e.style.backgroundColor===("red")){
-    document.getElementById("eC").innerHTML = "1"; 
-    }  
-    else{
-        document.getElementById("eC").innerHTML = "0"; 
-    }
-
-    var f=document.getElementById("fBit2");
-    if(f.style.backgroundColor===("red")){
-    document.getElementById("fC").innerHTML = "1"; 
-    }  
-    else{
-        document.getElementById("fC").innerHTML = "0"; 
-    }
-
-    var g=document.getElementById("gBit2");
-    if(g.style.backgroundColor===("red")){
-    document.getElementById("gC").innerHTML = "1"; 
-    }  
-    else{
-        document.getElementById("gC").innerHTML = "0"; 
-    }
-    document.getElementById("zeroOne").style.opacity = "1"; 
-
-
-}
-
-
-
-function getCodeHoverOn(){
-        document.getElementById("getCode").style.boxShadow = "0px 0px 5px 5px red";
-     }
-
-function getCodeHoverOff(){
-        document.getElementById("getCode").style.boxShadow = "0px 0px 0px 0px black";
-
-}
-
-document.getElementById("reset").onclick = function() {reset()};
-
-function reset(){
-    document.getElementById("aC").innerHTML = "0"; 
-    document.getElementById("bC").innerHTML = "0"; 
-    document.getElementById("cC").innerHTML = "0"; 
-    document.getElementById("dC").innerHTML = "0"; 
-    document.getElementById("eC").innerHTML = "0"; 
-    document.getElementById("fC").innerHTML = "0"; 
-    document.getElementById("gC").innerHTML = "0"; 
-
-    document.getElementById("zeroOne").style.opacity = "0"; 
-
-    document.getElementById("aBit2").style.backgroundColor = "#5551405e";
-    document.getElementById("bBit2").style.backgroundColor = "#5551405e";
-    document.getElementById("cBit2").style.backgroundColor = "#5551405e";
-    document.getElementById("dBit2").style.backgroundColor = "#5551405e";
-    document.getElementById("eBit2").style.backgroundColor = "#5551405e";
-    document.getElementById("fBit2").style.backgroundColor = "#5551405e";
-    document.getElementById("gBit2").style.backgroundColor = "#5551405e";
-
-
-
-}
-
-function resetHoverOn(){
-        document.getElementById("reset").style.boxShadow = "0px 0px 3px 3px rgb(60, 0, 255)";
-     }
-
-function resetHoverOff(){
-        document.getElementById("reset").style.boxShadow = "0px 0px 0px 0px black";
-
-}
-
-
-
