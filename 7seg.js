@@ -23,19 +23,19 @@ function myFunction() {
 
 
 // making the theory apper onclick to theory topic buttons
-topic1 = () => {
+const topic1 = () => {
   document.getElementById("theory").style.display = "none";
   document.getElementById("topic1").style.display = "block";
   document.getElementById("topic2").style.display = "none";
   document.getElementById("topic3").style.display = "none";
 };
-topic2 = () => {
+const topic2 = () => {
   document.getElementById("theory").style.display = "none";
   document.getElementById("topic1").style.display = "none";
   document.getElementById("topic2").style.display = "block";
   document.getElementById("topic3").style.display = "none";
 };
-topic3 = () => {
+const topic3 = () => {
   document.getElementById("theory").style.display = "none";
   document.getElementById("topic1").style.display = "none";
   document.getElementById("topic2").style.display = "none";
@@ -53,7 +53,7 @@ topic3 = () => {
 
 
 // reset table rows / 7 segment display
-reset = () => {
+const reset = () => {
   let x = document.querySelectorAll(".segment");
   let y = document.querySelectorAll(".num-btn");
   let z = document.querySelectorAll(".table-row");
@@ -77,7 +77,7 @@ reset = () => {
 
 
 // onclick corresponding ( bit 0 to bit 9 )
-digit0 = () => {
+const digit0 = () => {
   reset();
   var x = document.getElementById("table0");
   if (x.style.color === "red") {
@@ -86,7 +86,7 @@ digit0 = () => {
     mouseOver0();
   }
 };
-digit1 = () => {
+const digit1 = () => {
   reset();
   var x = document.getElementById("table1");
   if (x.style.color === "red") {
@@ -95,7 +95,7 @@ digit1 = () => {
     mouseOver1();
   }
 };
-digit2 = () => {
+const digit2 = () => {
   reset();
   var x = document.getElementById("table2");
   if (x.style.color === "red") {
@@ -104,7 +104,7 @@ digit2 = () => {
     mouseOver2();
   }
 };
-digit3 = () => {
+const digit3 = () => {
   reset();
   var x = document.getElementById("table3");
   if (x.style.color === "red") {
@@ -113,7 +113,7 @@ digit3 = () => {
     mouseOver3();
   }
 };
-digit4 = () => {
+const digit4 = () => {
   reset();
   var x = document.getElementById("table4");
   if (x.style.color === "red") {
@@ -122,7 +122,7 @@ digit4 = () => {
     mouseOver4();
   }
 };
-digit5 = () => {
+const digit5 = () => {
   reset();
   var x = document.getElementById("table5");
   if (x.style.color === "red") {
@@ -131,7 +131,7 @@ digit5 = () => {
     mouseOver5();
   }
 };
-digit6 = () => {
+const digit6 = () => {
   reset();
   var x = document.getElementById("table6");
   if (x.style.color === "red") {
@@ -140,7 +140,7 @@ digit6 = () => {
     mouseOver6();
   }
 };
-digit7 = () => {
+const digit7 = () => {
   reset();
   var x = document.getElementById("table7");
   if (x.style.color === "red") {
@@ -149,7 +149,7 @@ digit7 = () => {
     mouseOver7();
   }
 };
-digit8 = () => {
+const digit8 = () => {
   reset();
   var x = document.getElementById("table8");
   if (x.style.color === "red") {
@@ -158,7 +158,7 @@ digit8 = () => {
     mouseOver8();
   }
 };
-digit9 = () => {
+const digit9 = () => {
   reset();
   var x = document.getElementById("table9");
   if (x.style.color === "red") {
@@ -169,7 +169,7 @@ digit9 = () => {
 };
 
 // hover over table rows ( bit 0 to bit 9 )
-mouseOver0 = () => {
+const mouseOver0 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -182,7 +182,7 @@ mouseOver0 = () => {
   document.getElementById("table0").style.backgroundColor = "black";
   document.getElementById("table0").style.fontSize = "larger";
 };
-mouseOver1 = () => {
+const mouseOver1 = () => {
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
   document.getElementById("N1").style.backgroundColor = "black";
@@ -191,7 +191,7 @@ mouseOver1 = () => {
   document.getElementById("table1").style.backgroundColor = "black";
   document.getElementById("table1").style.fontSize = "larger";
 };
-mouseOver2 = () => {
+const mouseOver2 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("dBit").style.backgroundColor = "red";
@@ -203,7 +203,7 @@ mouseOver2 = () => {
   document.getElementById("table2").style.backgroundColor = "black";
   document.getElementById("table2").style.fontSize = "larger";
 }
-mouseOver3 = () => {
+const mouseOver3 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -217,7 +217,7 @@ mouseOver3 = () => {
   document.getElementById("table3").style.backgroundColor = "black";
   document.getElementById("table3").style.fontSize = "larger";
 }
-mouseOver4 = () => {
+const mouseOver4 = () => {
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
   document.getElementById("gBit").style.backgroundColor = "red";
@@ -230,7 +230,7 @@ mouseOver4 = () => {
   document.getElementById("table4").style.backgroundColor = "black";
   document.getElementById("table4").style.fontSize = "larger";
 }
-mouseOver5 = () => {
+const mouseOver5 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
   document.getElementById("dBit").style.backgroundColor = "red";
@@ -244,7 +244,7 @@ mouseOver5 = () => {
   document.getElementById("table5").style.backgroundColor = "black";
   document.getElementById("table5").style.fontSize = "larger";
 }
-mouseOver6 = () => {
+const mouseOver6 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
   document.getElementById("dBit").style.backgroundColor = "red";
@@ -259,7 +259,7 @@ mouseOver6 = () => {
   document.getElementById("table6").style.backgroundColor = "black";
   document.getElementById("table6").style.fontSize = "larger";
 }
-mouseOver7 = () => {
+const mouseOver7 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -271,7 +271,7 @@ mouseOver7 = () => {
   document.getElementById("table7").style.backgroundColor = "black";
   document.getElementById("table7").style.fontSize = "larger";
 }
-mouseOver8 = () => {
+const mouseOver8 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -287,7 +287,7 @@ mouseOver8 = () => {
   document.getElementById("table8").style.backgroundColor = "black";
   document.getElementById("table8").style.fontSize = "larger";
 }
-mouseOver9 = () => {
+const mouseOver9 = () => {
   document.getElementById("aBit").style.backgroundColor = "red";
   document.getElementById("bBit").style.backgroundColor = "red";
   document.getElementById("cBit").style.backgroundColor = "red";
@@ -316,7 +316,7 @@ mouseOver9 = () => {
 
 const array = document.querySelectorAll(".segment2");
 
-bitsOnMouseOver = (i) => {
+const segmentOnMouseOver = (i) => {
   let bit = array[i];
   if (bit.style.backgroundColor === "red") {
     bit.style.backgroundColor = "red";
@@ -324,7 +324,7 @@ bitsOnMouseOver = (i) => {
     bit.style.backgroundColor = "yellow";
   }
 };
-bitsOnMouseOut = (i) => {
+const segmentOnMouseOut = (i) => {
   let bit = array[i];
   if (bit.style.backgroundColor === "yellow") {
     bit.style.backgroundColor = "#5551405e";
@@ -333,7 +333,7 @@ bitsOnMouseOut = (i) => {
     bit.style.backgroundColor = "red";
   }
 };
-bitsOnClick = (i) => {
+const segmentOnClick = (i) => {
   let bit = array[i];
   if (bit.style.backgroundColor === "red") {
     bit.style.backgroundColor = "yellow";
@@ -343,27 +343,27 @@ bitsOnClick = (i) => {
 };
 
 // mouseOver , mouseOut , onclick for individual bit
-amouseOverBit = () => bitsOnMouseOver(0) ;
-amouseOutBit = () => bitsOnMouseOut(0) ;
-aBit2 = () => bitsOnClick(0) ;
-bmouseOverBit = () => bitsOnMouseOver(1) ;
-bmouseOutBit = () => bitsOnMouseOut(1) ;
-bBit2 = () => bitsOnClick(1) ;
-cmouseOverBit = () => bitsOnMouseOver(2) ;
-cmouseOutBit = () => bitsOnMouseOut(2) ;
-cBit2 = () => bitsOnClick(2) ;
-dmouseOverBit = () => bitsOnMouseOver(3) ;
-dmouseOutBit = () => bitsOnMouseOut(3) ;
-dBit2 = () => bitsOnClick(3) ;
-emouseOverBit = () => bitsOnMouseOver(4) ;
-emouseOutBit = () => bitsOnMouseOut(4) ;
-eBit2 = () => bitsOnClick(4) ;
-fmouseOverBit = () => bitsOnMouseOver(5) ;
-fmouseOutBit = () => bitsOnMouseOut(5) ;
-fBit2 = () => bitsOnClick(5) ;
-gmouseOverBit = () => bitsOnMouseOver(6) ;
-gmouseOutBit = () => bitsOnMouseOut(6) ;
-gBit2 = () => bitsOnClick(6) ;
+const amouseOverBit = () => segmentOnMouseOver(0) ;
+const amouseOutBit = () => segmentOnMouseOut(0) ;
+const aBit2 = () => segmentOnClick(0) ;
+const bmouseOverBit = () => segmentOnMouseOver(1) ;
+const bmouseOutBit = () => segmentOnMouseOut(1) ;
+const bBit2 = () => segmentOnClick(1) ;
+const cmouseOverBit = () => segmentOnMouseOver(2) ;
+const cmouseOutBit = () => segmentOnMouseOut(2) ;
+const cBit2 = () => segmentOnClick(2) ;
+const dmouseOverBit = () => segmentOnMouseOver(3) ;
+const dmouseOutBit = () => segmentOnMouseOut(3) ;
+const dBit2 = () => segmentOnClick(3) ;
+const emouseOverBit = () => segmentOnMouseOver(4) ;
+const emouseOutBit = () => segmentOnMouseOut(4) ;
+const eBit2 = () => segmentOnClick(4) ;
+const fmouseOverBit = () => segmentOnMouseOver(5) ;
+const fmouseOutBit = () => segmentOnMouseOut(5) ;
+const fBit2 = () => segmentOnClick(5) ;
+const gmouseOverBit = () => segmentOnMouseOver(6) ;
+const gmouseOutBit = () => segmentOnMouseOut(6) ;
+const gBit2 = () => segmentOnClick(6) ;
 
 
 // getting code sections
@@ -371,12 +371,11 @@ gBit2 = () => bitsOnClick(6) ;
 const gC = document.getElementById("getCode");
 gC.addEventListener('click', getCode );
 
-
 const rst = document.getElementById("reset");
 rst.addEventListener('click', resetting );
 
 
-function getCode(){
+function getCode() {
   array.forEach( (element,i) => {
     let status = document.getElementById(i) ;
     if (element.style.backgroundColor === "red") {
@@ -389,14 +388,11 @@ function getCode(){
   document.getElementById("zeroOne").style.opacity = "1";
 }
 
-function resetting(){
+
+function resetting() {
   array.forEach((element) => {
     element.style.backgroundColor = "#5551405e";
   })
   document.getElementById("zeroOne").style.opacity = "0";
 }
-
-
-
-
 
